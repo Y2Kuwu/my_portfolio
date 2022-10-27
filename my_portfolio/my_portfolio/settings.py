@@ -34,7 +34,7 @@ SECRET_KEY = ('SECRET_KEY')
 # DEBUG = env('DEBUG')
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://jfoxportfolio.herokuapp.com/']
 
 
 # Application definition
