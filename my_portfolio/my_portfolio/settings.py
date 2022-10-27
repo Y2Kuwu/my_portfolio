@@ -89,8 +89,6 @@ DATABASES = {
         'NAME': 'my_portfolio',
         'USER': env('USER'),
         'PASSWORD': ('PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': 5432
     }
 }
 
