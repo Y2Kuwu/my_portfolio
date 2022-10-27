@@ -35,9 +35,9 @@ SECRET_KEY = ('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = env('DEBUG')
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['jfoxportfolio.herokuapp.com']
+ALLOWED_HOSTS = ['https://jfoxportfolio.herokuapp.com/']
 
 
 # Application definition
@@ -127,7 +127,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
+# DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
