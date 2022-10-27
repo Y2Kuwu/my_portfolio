@@ -10,13 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import dj_database_url
+
 from pathlib import Path
 import environ
 import os
-env = environ.Env(
-    DEBUG=(bool, False)
-)
-
+# env = environ.Env(
+#     DEBUG=(bool, False)
+# )
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,7 +37,7 @@ SECRET_KEY = ('SECRET_KEY')
 # DEBUG = env('DEBUG')
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://jfoxportfolio.herokuapp.com/']
+ALLOWED_HOSTS = ['jfoxportfolio.herokuapp.com']
 
 
 # Application definition
@@ -45,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'main_app', 
 ]
@@ -85,7 +89,7 @@ WSGI_APPLICATION = 'my_portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'my_portfolio',
         'USER': env('USER'),
         'PASSWORD': ('PASSWORD'),
@@ -123,6 +127,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -137,6 +142,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import django_on_heroku
 django_on_heroku.settings(locals())
