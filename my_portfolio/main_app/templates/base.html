@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <p class = "me">James Fox</p>
+    <header>
+        
+        <div class = home_sweet_home>
+        <button id = 'home-btn'></button>
+        <img id = "home" src = "{% static 'home.png' %}" >
+        </div>
+        <div>
+        <script type="text/javascript">
+            document.getElementById("home-btn").onclick = function () {
+                location.href = "{% url 'home' %}";
+            };
+        </script>
+        </div>
+    <nav>
+                
+                <ul class="right">
+                        
+                        <li><a id = 'link' href="{% url 'link_page' %}">My links</a></li>
+                        <li><a id = 'link' href="{% url 'create_review' %}">Create a review</a></li>
+                        <li><a id = 'link' href="{% url 'review_index' %}">Check out reviews </a></li>
+                        <li><a id = 'link' href="{% url 'create_contact' %}">Contact</a></li>
+                </ul>
+               
+    </nav>     
+    </header>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    </body>
+</html>
+
+

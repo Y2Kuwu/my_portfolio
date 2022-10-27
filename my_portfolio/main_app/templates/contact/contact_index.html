@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Contacts</h1>
+
+    {% for contact in contacts %}
+            <div class="card">
+                <ul class="contact_list">
+                    <p></p>
+                    <li>Name: <span class="ct">{{ contact.name }}</span></li>
+                    <li>Email: <span class="ct">{{ contact.email }}</span></li>
+                    <li>Phone: <span class="ct">{{ contact.phone }}</span></li>
+                    <li>Buisness: <span class="ct">{{ contact.buisness }}</span></li>
+                    <li>Title: <span class="ct">{{ contact.title }}</span></li>
+                    <p></p>
+                </ul>
+            </div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class ='rev'> Reviews</h1>
+
+    {% for review in reviews %}
+        
+        
+                    <ul class="rev_box">
+                    <li id = "alias">Alias: {{ review.alias }}</li>
+                    <li id = "comment">Comment: {{ review.comment }}</li>
+                    <li id = "rating">Rating: {{ review.stars }}</li>
+                    </ul>
+
+    {% endfor %}
+
+{% endblock %}
