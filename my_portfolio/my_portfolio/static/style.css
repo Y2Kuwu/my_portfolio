@@ -22,6 +22,8 @@ h1{
     justify-content: space-evenly;
     margin-left: 320px;
     font-size: 18px;
+    text-shadow: silver 2px 2px;
+    
 }
 
 #myself{

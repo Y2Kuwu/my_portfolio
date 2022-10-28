@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
     <div class = 'my_links'>
     <ul class = 'linkz'>
     <li><a id = 'gh' href= "https://github.com/Y2Kuwu" target="_blank" rel="noopener noreferrer"> GitHub</a></li>
-    <li><a id = 're' href= "https://github.com/Y2Kuwu" target="_blank" rel="noopener noreferrer"> Resume</a></li>
+    <li><a id = 're' href = "{% static 'resume.pdf' %}" target="_blank" rel="noopener noreferrer"> Resume</a></li>
     <li><a id = 'tt' href= "https://github.com/Y2Kuwu/tic-tac-toe" target="_blank" rel="noopener noreferrer"> Tic-Tac-Toe</a><button id = "tic">?</button></li>
     <li><a id = 'sm' href= "https://coinconsumer.netlify.app/" target="_blank" rel="noopener noreferrer"> Slot Machine</a><button id = "slot">?</button></li>
     <li><a id = 'rl' href= "https://github.com/Y2Kuwu" target="_blank" rel="noopener noreferrer"> RadLibs</a></li>
