@@ -15,7 +15,6 @@ h1{
 }
 
 .abtme{
-    
     font-family: 'Readex Pro';
     display: flex;
     flex-direction: column;
@@ -75,6 +74,7 @@ nav:hover{
 @media (max-width: 900px) {
     .right {
       flex-direction: column;
+      width: 50%;
     }
 
     
@@ -92,6 +92,7 @@ nav:hover{
     #link {
       outline: none;
       text-decoration:underline;
+      width: 50%;
     }
 }
 #tic{
@@ -289,6 +290,7 @@ nav:hover{
    background-color: white;
     width: 30px;
     height: 30px;
+    width: 50%;
     }
 }
 .contact_list{
@@ -402,6 +404,7 @@ nav:hover{
         font-size: 20px;
         margin-left: 50px;
         text-shadow: gray 2px 2px;
+        width: 50%;
     }
 }
 
@@ -461,7 +464,7 @@ nav:hover{
 }
 @media(max-width: 900px){
     .em{
-        
+        width: 50%;
         font-size: 20px;
         margin-left: 50px;
     }
@@ -479,6 +482,7 @@ nav:hover{
     .email{
         font-size: 20px;
         margin-left: 310px;
+        width: 50%;
     }
 }
 .iEmail{
@@ -493,6 +497,7 @@ nav:hover{
         color: transparent;
         font-size: 20px;
         margin-left: 310px;
+        width: 50%;
     }
     .iEmail:hover{
         color: black;
@@ -522,6 +527,7 @@ nav:hover{
     #l{
         margin-left: 310px;
         font-size: 20px;
+        width: 50%;
     }
 }
 
