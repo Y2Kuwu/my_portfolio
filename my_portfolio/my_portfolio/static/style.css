@@ -440,15 +440,6 @@ nav:hover{
     margin-top: -60px;
     
 }
-.my_info{
-    font-size: 40px;
-    font-family: 'Readex Pro';
-    display: flex;
-   
-    list-style-type: none;
-    display: grid;
-    justify-content:center
-}
 
 
 .leave_info{
@@ -460,10 +451,10 @@ nav:hover{
     left: 0px;
     
 }
-@media(max-width:800px){
+@media(max-width: 715px){
     .leave_info{
-     font-size: 90%;
-}
+        font-size: 98%;
+    }
 }
 .or{
     position: relative;
@@ -493,10 +484,10 @@ nav:hover{
     text-decoration: none;
     list-style: none;
 }
-@media(max-width:800px){
+@media(max-width: 715px){
     .take_info{
-     font-size: 90%;
-}
+        font-size: 98%;
+    }
 }
 
 
@@ -535,7 +526,189 @@ nav:hover{
 }
 
 
-.em{
+
+
+.contact{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+@media(max-width: 900px){
+    .contact{
+        margin-bottom: 80px;
+    }
+}
+.linkedI{
+    font-size: 30px;
+    text-shadow: gray 2px 2px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: left;
+    justify-content: left;
+}
+@media(max-width: 900px){
+    .linkedI{
+        font-size: 30px;
+        text-shadow: gray 2px 2px;
+    }
+}
+/* .pointer{
+    display: flex;
+    justify-content: center;
+    margin-top: -120px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-family: 'Readex Pro';
+}
+@media(max-width: 900px){
+    .pointer{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        text-shadow: gray 2px 2px;
+    }
+} */
+
+.email{
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: gray 2px 2px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: left;
+    justify-content: left;
+}
+@media(max-width: 900px){
+    .email{
+        
+        font-size: 30px;
+        margin-bottom: -20px;
+        text-shadow: gray 2px 2px;
+    }
+}
+
+.iEmail{
+    margin-top: -40px;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: right;
+    justify-content: right;
+    color: transparent;
+}
+@media(max-width: 715px){
+    .iEmail{
+        font-size: 98%;
+    }
+}
+.iEmail:hover{
+    color: black;
+    text-shadow: gray 2px 2px;
+}
+.l{
+    color: transparent;
+    margin-top: -35px;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: right;
+    justify-content: right;
+    margin-right: 80px;
+    text-decoration: none;
+  
+}
+@media(max-width: 715px){
+    .l{
+        color: transparent;
+        font-size: 98%;
+        margin-left: 50px;
+    }
+}
+    .l:hover{
+        color: black;
+        text-shadow: gray 2px 2px;
+    }
+
+/* .email{
+    position: relative;
+    font-size: 40px;
+    font-family: 'Readex Pro';
+    text-align: center;
+    flex: auto;
+    justify-content: space-evenly;
+    
+}
+@media(max-width: 900px){
+    .email{
+        text-align: center;
+        font-size: 20px;
+        margin-left: 50px;
+        text-shadow: gray 2px 2px;
+    }
+}
+@media(max-width: 900px){
+    .email{
+        font-size: 20px;
+        margin-left: 310px;
+    }
+}
+@media(max-width: 593px){
+    .email{
+            color: black;
+            margin-top: 200px;
+            font-size: 20px;
+            margin-left: 0px;
+        }
+    }
+.iEmail{
+    margin-top: 40px;
+    color: transparent;
+    text-align: center;
+    margin-left: 675px;
+    font-family: 'Readex Pro';
+    display: flex;
+    list-style-type: none;
+    display: grid;
+    justify-content:center
+}
+@media(max-width: 594px){
+    .iEmail{
+        color: black;
+        margin-top: 200px;
+        font-size: 20px;
+        margin-left: 310px;
+    }
+}
+@media(max-width: 593px){
+    .iEmail{
+        margin-top: 200px;
+        font-size: 20px;
+        margin-left: 80px;
+        }
+    }
+    .iEmail:hover{
+        color: black;
+        font-size: 20px;
+        margin-left: 310px;
+    }
+   
+#l{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 645px;
+}
+@media(max-width: 900px){
+    #l{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+}
+#l:hover{
+    color:maroon;
+} */
+
+/* .em{
     color: transparent;
     margin-left: 165px;
 }
@@ -548,68 +721,18 @@ nav:hover{
         font-size: 20px;
         margin-left: 50px;
     }
-}
+} */
 
 
 
-.email{
-    color: black;
-    text-align: center;
-    margin-left: 675px;
-    position: fixed;
-}
-@media(max-width: 900px){
-    .email{
-        font-size: 20px;
-        margin-left: 310px;
-    }
-}
-.iEmail{
-    margin-top: 40px;
-    color: transparent;
-    text-align: center;
-    margin-left: 675px;
-    position: fixed;
-}
-@media(max-width: 698px){
-    .iEmail{
-        color: transparent;
-        font-size: 20px;
-        margin-left: 310px;
-    }
-    .iEmail:hover{
-        color: black;
-        font-size: 20px;
-        margin-left: 310px;
-    }
-    .em{
-        display: none;
-    }
-}
-
-#l{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 645px;
-    
-    position: fixed;
-   
-}
-#l:hover{
-    color:maroon;
-}
-
-@media(max-width: 900px){
+/* @media(max-width: 593px){
     #l{
-        margin-left: 310px;
-        font-size: 20px;
-    }
-}
-
-
-
+            color: black;
+            margin-top: 220px;
+            font-size: 20px;
+            position: absolute;
+        }
+    } */
 
 
 
