@@ -1,6 +1,7 @@
 body 
 {
-    background-color: whitesmoke
+    background-color: whitesmoke;
+
 }
 h1{
     text-align: center;
@@ -23,7 +24,12 @@ h1{
     margin-left: 320px;
     font-size: 18px;
     text-shadow: silver 2px 2px;
-    
+}
+@media(max-width:900px){
+    .abtme{
+        margin: auto;
+        align-items: center;
+    }
 }
 
 #myself{
@@ -40,11 +46,24 @@ h1{
     z-index: 1;
     
 }
+@media (max-width: 900px) {
+    #myself{
+     margin-top: -160px;
+     margin-left: 250px;
+     }
+ }
+
 .welcome{
     font-family: 'Readex Pro';
     margin-top: -200px;
     margin-right: 500px;
 }
+@media (max-width:900px){
+    .welcome{
+        margin: auto;
+    }
+}
+
 
 
 main{
@@ -251,14 +270,16 @@ nav:hover{
 }
 
 
-.abt{
+.about{
     font-family: 'Readex Pro';
-    background-color: whitesmoke;
-    outline-color: bisque;
-    outline-width: 4px;
-    outline-style: solid;
 }
-
+@media (max-width: 900px) {
+   .about{
+    
+    margin: auto;
+    margin-top: 80px;
+    }
+}
 
 
 #home-btn{
