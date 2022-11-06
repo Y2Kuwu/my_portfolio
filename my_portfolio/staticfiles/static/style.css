@@ -1,7 +1,7 @@
 body 
 {
     background-color: whitesmoke;
-   
+
 }
 h1{
     text-align: center;
@@ -16,12 +16,20 @@ h1{
 }
 
 .abtme{
+    
     font-family: 'Readex Pro';
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 320px;
     font-size: 18px;
+    text-shadow: silver 2px 2px;
+}
+@media(max-width:900px){
+    .abtme{
+        margin: auto;
+        align-items: center;
+    }
 }
 
 #myself{
@@ -38,11 +46,24 @@ h1{
     z-index: 1;
     
 }
+@media (max-width: 900px) {
+    #myself{
+     margin-top: -160px;
+     margin-left: 250px;
+     }
+ }
+
 .welcome{
     font-family: 'Readex Pro';
     margin-top: -200px;
     margin-right: 500px;
 }
+@media (max-width:900px){
+    .welcome{
+        margin: auto;
+    }
+}
+
 
 
 main{
@@ -75,7 +96,6 @@ nav:hover{
 @media (max-width: 900px) {
     .right {
       flex-direction: column;
-      width: 50%;
     }
 
     
@@ -93,7 +113,6 @@ nav:hover{
     #link {
       outline: none;
       text-decoration:underline;
-      width: 50%;
     }
 }
 #tic{
@@ -148,6 +167,7 @@ nav:hover{
     font-size: 30px;
     font-family: 'Readex Pro';
 }
+
 .linkz{
   
     list-style: none;
@@ -172,6 +192,11 @@ nav:hover{
 #gh:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #gh{
+        font-size: 90%;
+    }
+}
 #tt{
     text-decoration: none;
     list-style: none;
@@ -182,6 +207,11 @@ nav:hover{
 }
 #tt:hover{
     color: rgb(93, 5, 5);
+}
+@media(max-width:600px){
+    #tt{
+        font-size: 90%;
+    }
 }
 #sm{
     text-decoration: none;
@@ -194,7 +224,12 @@ nav:hover{
 #sm:hover{
     color: rgb(93, 5, 5);
 }
-#rl{
+@media(max-width:600px){
+    #sm{
+        font-size: 90%;
+    }
+}
+/* #rl{
     text-decoration: none;
     list-style: none;
     font-size: 60px;
@@ -205,6 +240,11 @@ nav:hover{
 #rl:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #rl{
+        font-size: 90%;
+    }
+} */
 #ca{
     text-decoration: none;
     list-style: none;
@@ -215,6 +255,11 @@ nav:hover{
 }
 #ca:hover{
     color: rgb(93, 5, 5);
+}
+@media(max-width:600px){
+    #ca{
+        font-size: 90%;
+    }
 }
 #re{
     text-decoration: none;
@@ -227,6 +272,11 @@ nav:hover{
 #re:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #re{
+        font-size: 90%;
+    }
+}
 #pm{
     text-decoration: none;
     list-style: none;
@@ -237,6 +287,11 @@ nav:hover{
 }
 #pm:hover{
     color: rgb(93, 5, 5);
+}
+@media(max-width:600px){
+    #pm{
+        font-size: 90%;
+    }
 }
 #fb{
     text-decoration: none;
@@ -249,16 +304,23 @@ nav:hover{
 #fb:hover{
     color: rgb(93, 5, 5);
 }
-
-
-.abt{
-    font-family: 'Readex Pro';
-    background-color: whitesmoke;
-    outline-color: bisque;
-    outline-width: 4px;
-    outline-style: solid;
+@media(max-width:600px){
+    #fb{
+        font-size: 90%;
+    }
 }
 
+
+.about{
+    font-family: 'Readex Pro';
+}
+@media (max-width: 900px) {
+   .about{
+    
+    margin: auto;
+    margin-top: 80px;
+    }
+}
 
 
 #home-btn{
@@ -291,7 +353,6 @@ nav:hover{
    background-color: white;
     width: 30px;
     height: 30px;
-    width: 50%;
     }
 }
 .contact_list{
@@ -327,32 +388,11 @@ nav:hover{
     outline-width: 2px;
     outline-color: black;
 }
-#id_name{
+#id_name, #id_email, #id_phone, #id_buisness, #id_title{
     font-family: 'Readex Pro';
     background-color: whitesmoke;
     font-size: 20px;
 }
-#id_email{
-    font-family: 'Readex Pro';
-    background-color: whitesmoke;
-    font-size: 20px;
-}
-#id_phone{
-    font-family: 'Readex Pro';
-    background-color: whitesmoke;
-    font-size: 20px;
-}
-#id_buisness{
-    font-family: 'Readex Pro';
-    background-color: whitesmoke;
-    font-size: 20px;
-}
-#id_title{
-    font-family: 'Readex Pro';
-    background-color: whitesmoke;
-    font-size: 20px;
-}
-
 #alias{
     background-color: whitesmoke;
 }
@@ -370,6 +410,13 @@ nav:hover{
     outline-width: 4px;
     outline-color: black;
 }
+@media(max-width:440px){
+    #id_comment{
+        width: 90%;
+    }
+}
+
+
 
 .review_button{
     margin-top: 10px;
@@ -377,6 +424,7 @@ nav:hover{
     background-color: maroon;
    
 }
+
 
 .connect{
     margin-top: 50px;
@@ -388,20 +436,11 @@ nav:hover{
 }
 
 
-
 .con_form{
     margin-top: -60px;
+    
 }
 
-
-.my_info{
-    font-size: 40px;
-    font-family: 'Readex Pro';
-    display: flex;
-    list-style-type: none;
-    display: grid;
-    justify-content:center
-}
 
 .leave_info{
     position: relative;
@@ -410,10 +449,11 @@ nav:hover{
     flex: auto;
     justify-content: space-evenly;
     left: 0px;
+    
 }
-@media(max-width:800px){
+@media(max-width: 715px){
     .leave_info{
-        font-size: 60%;
+        font-size: 98%;
     }
 }
 .or{
@@ -431,7 +471,6 @@ nav:hover{
         font-size: 20px;
         margin-left: 50px;
         text-shadow: gray 2px 2px;
-        width: 50%;
     }
 }
 
@@ -442,12 +481,12 @@ nav:hover{
     flex: auto;
     justify-content: space-evenly;
     text-align: right;
-    
+    text-decoration: none;
+    list-style: none;
 }
-@media(max-width:800px){
+@media(max-width: 715px){
     .take_info{
-        font-size: 60%;
-        position: null;
+        font-size: 98%;
     }
 }
 
@@ -485,14 +524,191 @@ nav:hover{
     outline-color: black;
     background-color: white;
 }
-@media(max-width:800px){
-    .rev_box{
-        font-size: 60%;
+
+
+
+
+.contact{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+@media(max-width: 900px){
+    .contact{
+        margin-bottom: 80px;
+    }
+}
+.linkedI{
+    font-size: 30px;
+    text-shadow: gray 2px 2px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: left;
+    justify-content: left;
+}
+@media(max-width: 900px){
+    .linkedI{
+        font-size: 30px;
+        text-shadow: gray 2px 2px;
+    }
+}
+/* .pointer{
+    display: flex;
+    justify-content: center;
+    margin-top: -120px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-family: 'Readex Pro';
+}
+@media(max-width: 900px){
+    .pointer{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        text-shadow: gray 2px 2px;
+    }
+} */
+
+.email{
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: gray 2px 2px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: left;
+    justify-content: left;
+}
+@media(max-width: 900px){
+    .email{
+        
+        font-size: 30px;
+        margin-bottom: -20px;
+        text-shadow: gray 2px 2px;
     }
 }
 
+.iEmail{
+    margin-top: -40px;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: right;
+    justify-content: right;
+    color: transparent;
+}
+@media(max-width: 715px){
+    .iEmail{
+        font-size: 98%;
+    }
+}
+.iEmail:hover{
+    color: black;
+    text-shadow: gray 2px 2px;
+}
+.l{
+    color: transparent;
+    margin-top: -35px;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Readex Pro';
+    align-items: right;
+    justify-content: right;
+    margin-right: 80px;
+    text-decoration: none;
+  
+}
+@media(max-width: 715px){
+    .l{
+        color: transparent;
+        font-size: 98%;
+        margin-left: 50px;
+    }
+}
+    .l:hover{
+        color: black;
+        text-shadow: gray 2px 2px;
+    }
 
-.em{
+/* .email{
+    position: relative;
+    font-size: 40px;
+    font-family: 'Readex Pro';
+    text-align: center;
+    flex: auto;
+    justify-content: space-evenly;
+    
+}
+@media(max-width: 900px){
+    .email{
+        text-align: center;
+        font-size: 20px;
+        margin-left: 50px;
+        text-shadow: gray 2px 2px;
+    }
+}
+@media(max-width: 900px){
+    .email{
+        font-size: 20px;
+        margin-left: 310px;
+    }
+}
+@media(max-width: 593px){
+    .email{
+            color: black;
+            margin-top: 200px;
+            font-size: 20px;
+            margin-left: 0px;
+        }
+    }
+.iEmail{
+    margin-top: 40px;
+    color: transparent;
+    text-align: center;
+    margin-left: 675px;
+    font-family: 'Readex Pro';
+    display: flex;
+    list-style-type: none;
+    display: grid;
+    justify-content:center
+}
+@media(max-width: 594px){
+    .iEmail{
+        color: black;
+        margin-top: 200px;
+        font-size: 20px;
+        margin-left: 310px;
+    }
+}
+@media(max-width: 593px){
+    .iEmail{
+        margin-top: 200px;
+        font-size: 20px;
+        margin-left: 80px;
+        }
+    }
+    .iEmail:hover{
+        color: black;
+        font-size: 20px;
+        margin-left: 310px;
+    }
+   
+#l{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 645px;
+}
+@media(max-width: 900px){
+    #l{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+}
+#l:hover{
+    color:maroon;
+} */
+
+/* .em{
     color: transparent;
     margin-left: 165px;
 }
@@ -501,75 +717,22 @@ nav:hover{
 }
 @media(max-width: 900px){
     .em{
-        width: 50%;
+        
         font-size: 20px;
         margin-left: 50px;
     }
-}
+} */
 
 
 
-.email{
-    color: black;
-    text-align: center;
-    margin-left: 675px;
-    position: fixed;
-}
-@media(max-width: 900px){
-    .email{
-        font-size: 20px;
-        margin-left: 310px;
-        width: 50%;
-    }
-}
-.iEmail{
-    margin-top: 40px;
-    color: transparent;
-    text-align: center;
-    margin-left: 675px;
-    position: fixed;
-}
-@media(max-width: 698px){
-    .iEmail{
-        color: transparent;
-        font-size: 20px;
-        margin-left: 310px;
-        width: 50%;
-    }
-    .iEmail:hover{
-        color: black;
-        font-size: 20px;
-        margin-left: 310px;
-    }
-    .em{
-        display: none;
-    }
-}
-
-#l{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 645px;
-    
-    position: fixed;
-   
-}
-#l:hover{
-    color:maroon;
-}
-
-@media(max-width: 900px){
+/* @media(max-width: 593px){
     #l{
-        margin-left: 310px;
-        font-size: 20px;
-        width: 50%;
-    }
-}
-
-
-
+            color: black;
+            margin-top: 220px;
+            font-size: 20px;
+            position: absolute;
+        }
+    } */
 
 
 
