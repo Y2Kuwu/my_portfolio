@@ -327,11 +327,32 @@ nav:hover{
     outline-width: 2px;
     outline-color: black;
 }
-#id_name, #id_email, #id_phone, #id_buisness, #id_title{
+#id_name{
     font-family: 'Readex Pro';
     background-color: whitesmoke;
     font-size: 20px;
 }
+#id_email{
+    font-family: 'Readex Pro';
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+#id_phone{
+    font-family: 'Readex Pro';
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+#id_buisness{
+    font-family: 'Readex Pro';
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+#id_title{
+    font-family: 'Readex Pro';
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
 #alias{
     background-color: whitesmoke;
 }
@@ -367,15 +388,16 @@ nav:hover{
 }
 
 
+
 .con_form{
     margin-top: -60px;
-    
 }
+
+
 .my_info{
     font-size: 40px;
     font-family: 'Readex Pro';
     display: flex;
-   
     list-style-type: none;
     display: grid;
     justify-content:center
@@ -388,7 +410,11 @@ nav:hover{
     flex: auto;
     justify-content: space-evenly;
     left: 0px;
-    
+}
+@media(max-width:800px){
+    .leave_info{
+        font-size: 60%;
+    }
 }
 .or{
     position: relative;
@@ -416,8 +442,13 @@ nav:hover{
     flex: auto;
     justify-content: space-evenly;
     text-align: right;
-    text-decoration: none;
-    list-style: none;
+    
+}
+@media(max-width:800px){
+    .take_info{
+        font-size: 60%;
+        position: null;
+    }
 }
 
 
@@ -453,6 +484,11 @@ nav:hover{
     outline-style: solid;
     outline-color: black;
     background-color: white;
+}
+@media(max-width:800px){
+    .rev_box{
+        font-size: 60%;
+    }
 }
 
 

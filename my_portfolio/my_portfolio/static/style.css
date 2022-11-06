@@ -167,6 +167,7 @@ nav:hover{
     font-size: 30px;
     font-family: 'Readex Pro';
 }
+
 .linkz{
   
     list-style: none;
@@ -191,6 +192,11 @@ nav:hover{
 #gh:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #gh{
+        font-size: 90%;
+    }
+}
 #tt{
     text-decoration: none;
     list-style: none;
@@ -201,6 +207,11 @@ nav:hover{
 }
 #tt:hover{
     color: rgb(93, 5, 5);
+}
+@media(max-width:600px){
+    #tt{
+        font-size: 90%;
+    }
 }
 #sm{
     text-decoration: none;
@@ -213,7 +224,12 @@ nav:hover{
 #sm:hover{
     color: rgb(93, 5, 5);
 }
-#rl{
+@media(max-width:600px){
+    #sm{
+        font-size: 90%;
+    }
+}
+/* #rl{
     text-decoration: none;
     list-style: none;
     font-size: 60px;
@@ -224,6 +240,11 @@ nav:hover{
 #rl:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #rl{
+        font-size: 90%;
+    }
+} */
 #ca{
     text-decoration: none;
     list-style: none;
@@ -234,6 +255,11 @@ nav:hover{
 }
 #ca:hover{
     color: rgb(93, 5, 5);
+}
+@media(max-width:600px){
+    #ca{
+        font-size: 90%;
+    }
 }
 #re{
     text-decoration: none;
@@ -246,6 +272,11 @@ nav:hover{
 #re:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #re{
+        font-size: 90%;
+    }
+}
 #pm{
     text-decoration: none;
     list-style: none;
@@ -257,6 +288,11 @@ nav:hover{
 #pm:hover{
     color: rgb(93, 5, 5);
 }
+@media(max-width:600px){
+    #pm{
+        font-size: 90%;
+    }
+}
 #fb{
     text-decoration: none;
     list-style: none;
@@ -267,6 +303,11 @@ nav:hover{
 }
 #fb:hover{
     color: rgb(93, 5, 5);
+}
+@media(max-width:600px){
+    #fb{
+        font-size: 90%;
+    }
 }
 
 
@@ -369,6 +410,13 @@ nav:hover{
     outline-width: 4px;
     outline-color: black;
 }
+@media(max-width:440px){
+    #id_comment{
+        width: 90%;
+    }
+}
+
+
 
 .review_button{
     margin-top: 10px;
@@ -376,6 +424,7 @@ nav:hover{
     background-color: maroon;
    
 }
+
 
 .connect{
     margin-top: 50px;
@@ -401,6 +450,7 @@ nav:hover{
     justify-content:center
 }
 
+
 .leave_info{
     position: relative;
     font-size: 40px;
@@ -409,6 +459,11 @@ nav:hover{
     justify-content: space-evenly;
     left: 0px;
     
+}
+@media(max-width:800px){
+    .leave_info{
+     font-size: 90%;
+}
 }
 .or{
     position: relative;
@@ -437,6 +492,11 @@ nav:hover{
     text-align: right;
     text-decoration: none;
     list-style: none;
+}
+@media(max-width:800px){
+    .take_info{
+     font-size: 90%;
+}
 }
 
 

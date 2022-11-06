@@ -7,7 +7,7 @@
     <p>If you have some time to voice your thoughts on what you think of the site I would greatly appreciate it! </p>
     <p>If you would like to stay anonymous feel free to use an alias. If you'd like to get in touch check out the contact tab above.</p>
     </div>
-  <form method="POST" action="{% url 'create_review' %}" >
+  <form class = 'review' method="POST" action="{% url 'create_review' %}" >
     {% csrf_token %}
     <table class="review_info">
       {{ rev_form }}

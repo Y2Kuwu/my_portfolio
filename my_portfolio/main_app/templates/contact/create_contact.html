@@ -4,17 +4,16 @@
  <div class="connect">
     <div class = 'leave_info'>Let me seek you</div>
     <div class = 'or'>||or||</div>
-    <div class = 'take_info'>Seek me out</div>
-    
-      
+    <div class = 'take_info'>Seek me out</div> 
 </div>
+
 <ul class ='my_info'>
 <a class ='email'>Email:<span class ='em'>jamesmfox5@gmail.com</span></a>
 <a class = "iEmail">jamesmfox5@gmail.com<a>
 <a id = 'l' href = "https://www.linkedin.com/in/james-fox-b372b558/"target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </ul>
+</ul>
 <div class = 'con_form'>
-  <form method="POST" action="{% url 'create_contact' %}" >
+  <form id = 'con' method="POST" action="{% url 'create_contact' %}" >
     {% csrf_token %}
     <table class = 'contact_info'>
       {{ contact_form }}
