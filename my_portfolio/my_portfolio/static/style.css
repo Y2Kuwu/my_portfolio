@@ -1,3 +1,7 @@
+
+
+
+
 body 
 {
     background-color: whitesmoke;
@@ -72,7 +76,7 @@ main{
 }
 nav{ 
     margin-bottom: -15px;
-    background-color: gray;
+    /* //background-color: gray; */
     margin-top: -70px;
     z-index: -1;
 }
@@ -624,10 +628,53 @@ nav:hover{
     }
 }
     .l:hover{
+        
         color: black;
         text-shadow: gray 2px 2px;
     }
-
+    .aGame{
+        color: goldenrod;
+        text-shadow: red 2px 2px, black 3px 3px;
+    }
+    
+    .m{
+        color: silver;
+        text-shadow: gray 2px 2px, black 3px 3px;
+    }
+    .y{
+        color: peru;
+        text-shadow: gray 2px 2px, black 3px 3px;
+    }
+    .warn{
+        background-color: red;
+        border-radius: 6px;
+        color: maroon;
+        text-shadow: yellow 2px 2px, black 3px 3px;
+    }
+    .note{
+        background-color: rgb(4, 87, 4);
+        border-radius: 6px;
+        color: rgb(42, 255, 42);
+        text-shadow: green 2px 2px, black 3px 3px;
+    }
+    .dollar{
+        color: rgb(4, 87, 4);
+        text-shadow: green 2px 2px, black 3px 3px;
+    }
+    .x{
+        color: maroon;
+        text-shadow: green 2px 2px, black 3px 3px;
+    }
+    .heart{
+        border-radius: 5px;
+        outline-width: 4px;
+        outline-style: solid;
+        outline-color: rgb(91, 186, 154);
+        background-color: pink;
+    }
+    .matchMe{
+        text-shadow: pink 2px 2px, red 3px 3px;
+    }
 /* .email{
     position: relative;
     font-size: 40px;
