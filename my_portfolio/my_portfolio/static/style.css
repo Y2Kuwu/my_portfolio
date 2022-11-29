@@ -167,6 +167,7 @@ nav:hover{
 }
 
 .my_links{
+    margin-top: 40px;
     list-style: none;
     font-size: 30px;
     font-family: 'Readex Pro';
@@ -329,8 +330,8 @@ nav:hover{
 
 #home-btn{
     position: absolute;
-    left: 8px;
-    top: 130px;
+    left: 0px;
+    top: 55px;
     width: 40px;
     height: 44px;
     z-index: 1;
@@ -344,7 +345,7 @@ nav:hover{
     height: 40px;
     border-radius: 20%;
     left: 0px;
-    top: 6px;
+    top: -20px;
     background-color: whitesmoke;
     outline-width: 2px;
     outline-style: solid;
